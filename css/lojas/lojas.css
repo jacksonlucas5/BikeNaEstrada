@@ -1,0 +1,169 @@
+.lojas-bg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 120px;
+  gap: 40px;
+}
+
+.contatos-informacao {
+  padding: 60px 30px;
+  background:#000000 url("/img/dec/top-right.svg") no-repeat bottom 20px left 30px;
+}
+
+.contatos-informacao h2 {
+  font-size: 1.2rem;
+  padding-left: 25px;
+  font-family: "Roboto";
+  margin-bottom: 20px;
+}
+
+.article-contatos > h2 {
+  padding-left: 50px;
+  margin-bottom: 60px;
+}
+
+.lojas-conteudo {
+  padding: 0px 32px;
+  display: grid;
+  gap: 10px 0px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.lojas-conteudo p {
+  grid-column: 1/-1;
+}
+
+.lojas-conteudo > p {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  gap: 0px 8px;
+}
+
+.lojas-informacoes {
+  display: grid;
+  gap: 12px 0px;
+  position: relative;
+  margin-left: 25px;
+  padding-left: 12px;
+  border-left: 2px solid #ededed;
+}
+
+.lojas > img {
+  margin-bottom: 32px;
+}
+
+.lojas h2 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 2rem;
+  grid-column: 1/-1;
+  line-height: 1.25;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.lojas h2::before {
+  content: "";
+  width: 12px;
+  display: inline-block;
+  height: 8px;
+  margin-right: 12px;
+  background: #ffbb00;
+}
+
+@media (max-width: 1000px) {
+  .lojas-bg {
+    margin-bottom: 100px;
+    gap: 20px;
+  }
+
+  .article-contatos > h2 {
+    padding-left: 50px;
+    margin-bottom: 20px;
+  }
+
+  .lojas h2 {
+    font-size: 1.7rem;
+  }
+
+  .lojas h2 {
+    margin-bottom: 10px;
+  }
+
+  .lojas-conteudo {
+    padding: 0px 20px;
+    gap: 20px 0px;
+    grid-template-columns: 1fr;
+  }
+
+  .lojas-conteudo > p {
+    margin-top: 20px;
+    gap: 0px 8px;
+  }
+}
+
+@media (max-width: 800px) {
+  .lojas-bg {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 100px;
+    gap: 80px;
+  }
+  .contatos-informacao {
+    background:#000000 url("/img/dec/top-right.svg") no-repeat bottom 20px right 40px;
+  }
+  .article-contatos > h2 {
+    padding-left: 30px;
+    margin-bottom: 20px;
+  }
+
+  .lojas-conteudo {
+    padding: 0px 20px;
+    gap: 20px 0px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .lojas-bg {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 100px;
+    gap: 80px;
+  }
+
+  .lojas h2 {
+    font-size: 1.6rem;
+  }
+
+  .lojas-conteudo {
+    padding: 0px 10px;
+    gap: 20px 0px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .lojas-bg {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+    gap: 80px;
+  }
+
+  .lojas h2 {
+    font-size: 1.2rem;
+  }
+  .contatos-informacao {
+    background: #000000 none;
+  }
+  .lojas-conteudo {
+    padding: 0px 10px;
+    gap: 20px 0px;
+    font-size: 0.8rem;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,149 @@
+.depoimento {
+  display: grid;
+  max-width: 1600px;
+  margin: 0 auto;
+  align-items: center;
+  background-color: var(--cor-p1);
+  justify-items: center;
+  overflow: hidden;
+ 
+  grid-template-columns: 1fr 1fr;
+}
+
+.depoimento img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.depoimento-itens {
+  display: grid;
+  padding: 80px 40px;
+  background: url("/img/dec/bottom-right.svg") no-repeat bottom 20px right 20px;
+  align-self: flex-end;
+}
+
+.depoimento-itens p {
+  padding: 0px;
+  margin: 0px;
+  max-width: 32ch;
+  font-weight: 900;
+  font-family: "Merriweather";
+  font-style: italic;
+  color: var(--cor-p5);
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.depoimento p::before {
+  content: "“";
+  font-size: 4rem;
+  top: -22px;
+  left: -35px;
+  position: absolute;
+  color: var(--cor-p2);
+}
+
+.depoimento p::after {
+  content: "”";
+  position: absolute;
+  font-size: 4rem;
+  color: var(--cor-p2);
+}
+
+.depoimento-itens > span {
+  display: block;
+  font-weight: 600;
+  color: var(--cor-p4);
+}
+
+@media (max-width: 1073px) {
+  .depoimento {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .depoimento img {
+    max-height: 280px;
+  }
+
+  .depoimento-itens {
+    padding: 30px 20px;
+  }
+
+  .depoimento-itens p {
+    margin-bottom: 10px;
+  }
+
+  .depoimento-itens > span {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .depoimento-itens p {
+    font-size: 1.6rem;
+  }
+
+  .depoimento-itens > span {
+    justify-self: center;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .depoimento-itens {
+    padding: 25px 10px;
+  }
+
+  .depoimento-itens p {
+    font-size: 1.4rem;
+  }
+
+  .depoimento img {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 530px) {
+  .depoimento-itens {
+    background: none;
+    padding: 25px 10px;
+  }
+
+  .depoimento-itens p {
+    font-size: 1.25rem;
+  }
+
+  .depoimento-itens > span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .depoimento-itens {
+    padding: 25px 10px;
+  }
+
+  .depoimento-itens p {
+    font-size: 1rem;
+  }
+
+  .depoimento-itens > span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .depoimento-itens {
+    padding: 25px 10px;
+  }
+
+  .depoimento-itens p {
+    font-size: 0.85rem;
+  }
+
+  .depoimento-itens > span {
+    font-size: 0.7rem;
+  }
+}

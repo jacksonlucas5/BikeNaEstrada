@@ -1,0 +1,109 @@
+.article-seguros-bg {
+  background: #111111;
+}
+
+.seguros-bicicleta {
+  display: grid;
+  margin-top: 120px;
+  padding-bottom: 60px;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px 0px;
+}
+
+.seguros-imagem-bicicleta {
+  grid-column: 1;
+  margin-top: -120px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -120px;
+}
+
+.seguros-imagem-bicicleta > img {
+  max-width: 100%;
+  max-height: 100%;
+  grid-row: 1/-1;
+  object-fit: cover;
+}
+
+.seguros-bicicletas-informacoes > h2 {
+  color: #ffffff;
+  font-size: 4rem;
+  line-height: 1.125;
+  font-family: "Poppins";
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.seguros-bicicletas-informacoes > h2 > span {
+  color: #ffbb00;
+}
+
+.seguros-bicicletas-informacoes > p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Roboto";
+  color: #b2b2b2;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  .seguros-bicicletas-informacoes > h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+  }
+
+  .seguros-bicicletas-informacoes > p {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 800px) {
+  .seguros-bicicleta {
+    grid-template-columns: 1fr;
+  }
+
+  .seguros-imagem-bicicleta {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .seguros-bicicletas-informacoes > h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+  }
+  .seguros-imagem-bicicleta > img {
+    max-height: 250px;
+    width: 100vw;
+    margin-top: 35px;
+    margin-bottom: -100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .seguros-bicicletas-informacoes > h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .seguros-bicicletas-informacoes > h2 {
+    font-size: 1.7rem;
+  }
+  .seguros-bicicletas-informacoes > p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 355px) {
+  .seguros-bicicletas-informacoes > h2 {
+    font-size: 1.5rem;
+  }
+  .seguros-bicicletas-informacoes > p {
+    font-size: 1rem;
+  }
+}

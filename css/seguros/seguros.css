@@ -1,0 +1,158 @@
+.seguros-bg {
+  background-color: var(--cor-11);
+  padding: 1px;
+}
+
+.seguros-bg h1{
+  color: var(--cor-6);
+  margin-left: 10px;
+}
+
+.seguros {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  padding: 50px 32px 40px 32px;
+  align-items: center;
+}
+
+.plano-itens {
+  flex: 1;
+  gap: 0px;
+  padding-right: 20px;
+  background: var(--cor-12);
+  display: grid;
+  border-radius: 5px;
+  grid-template-columns: 1fr auto;
+}
+
+.plano-itens h2 {
+  margin-bottom: 40px;
+  padding-left: 30px;
+  margin-right: 50px;
+  height: 100%;
+  padding-top: 20px;
+  
+  align-self: flex-start;
+}
+.plano-itens h2:nth-child(2) {
+  color: var(--cor-p1);
+}
+.plano-itens span {
+  display: grid;
+  padding-top: 10px;
+  text-align: right;
+  white-space: nowrap;
+  color: var(--cor-0);
+  display: block;
+}
+
+.plano-itens .mensalidade {
+  color: var(--cor-6);
+}
+
+.plano-itens ul li {
+  color: var(--cor-0);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 30px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.plano-itens ul li::before {
+  content: "";
+  width: 13px;
+  display: inline-block;
+  padding-left: 5px;
+  background-repeat: no-repeat;
+  color: aliceblue;
+  height: 9px;
+  background-image: url("./img/icones/lista.svg");
+}
+
+.plano-itens a {
+  grid-column: 1;
+  grid-row: 3;
+  white-space: nowrap;
+  justify-self: flex-start;
+  margin: 10px 20px 50px 30px;
+}
+
+@media (max-width: 895px) {
+  .plano-itens span,
+  .plano-itens .mensalidade {
+    display: grid;
+    width: 300px;
+    padding-top: 15px;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .seguros {
+    padding: 40px 30px;
+  }
+
+  .plano-itens {
+    min-width: 250px;
+  }
+
+  .plano-itens h3 {
+    font-size: 1.5rem;
+    font-family: "Poppins";
+    margin-bottom: 10px;
+  }
+
+  .plano-itens ul {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .plano-itens ul li {
+    font-size: 1rem;
+  }
+
+  .plano-itens ul li:nth-last-child(1) {
+    border-bottom: 3px solid var(--cor-11);
+  }
+
+  .plano-itens span {
+    grid-row: 3;
+    grid-column: 1;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .plano-itens .mensalidade {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+
+  .plano-itens a {
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .seguros {
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .plano-itens {
+    min-width: auto;
+  }
+
+  .plano-itens ul li {
+    font-size: 0.8rem;
+  }
+
+  .plano-itens span {
+    font-size: 1rem;
+  }
+}

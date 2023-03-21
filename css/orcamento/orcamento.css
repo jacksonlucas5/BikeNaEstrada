@@ -1,0 +1,313 @@
+.article-orcamento {
+  background: linear-gradient(#111111 50%, #ffffff 0%);
+}
+
+.form-orcamento {
+  display: grid;
+  padding: 60px 20px;
+  grid-template-columns: 5fr 7fr;
+}
+
+.form-orcamento h2 {
+  font-size: 0.8rem;
+  line-height: 2;
+  font-family: "Poppins";
+  color: #cccccc;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  align-self: flex-start;
+  letter-spacing: 0.015em;
+}
+
+.form-orcamento h2::before {
+  content: "";
+  width: 4px;
+  position: absolute;
+  height: 8px;
+  left: -10px;
+  background: #ffbb00;
+}
+
+.escolha-produtos {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.orcamentos-produtos {
+  color: #cccccc;
+  padding: 60px;
+  width: 100%;
+  max-width: 500px;
+  background: #000000 url("/img/dec/bottom-right.svg") no-repeat bottom 20px left 20px;
+}
+
+.orcamentos-produtos input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.orcamentos-produtos label {
+  background: #f7f7f7;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  padding: 12px 16px;
+  color: #111111;
+  gap: 0px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.orcamentos-produtos input:checked + label {
+  background: #2e2e2e;
+  color: #cccccc;
+  border: 2px solid var(--cor-p1);
+}
+
+#nebula:checked ~ #bikcraft-nebula,
+#magic:checked ~ #bikcraft-magic,
+#nimbus:checked ~ #bikcraft-nimbus,
+#seguro:checked ~ #orcamento-seguro,
+#bikcraft:checked ~ #orcamento-bikcraft {
+  display: grid;
+  grid-column: 1/-1;
+}
+
+.orcamento-bicicletas label::before {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--cor-6);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.orcamento-bicicletas input:checked + label::before {
+  border-color: var(--cor-7);
+  box-shadow: inset 0 0 0 3px var(--cor-0), inset 0 0 0 6px var(--cor-7);
+}
+
+#bikcraft-nebula,
+#bikcraft-magic,
+#bikcraft-nimbus,
+#orcamento-bikcraft,
+#orcamento-seguro {
+  display: none;
+}
+
+.orcamento-seguro label::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 13px;
+  left: 10px;
+  border: 1px solid var(--cor-6);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.orcamento-seguro input:checked + label::before {
+  border-color: var(--cor-7);
+  box-shadow: inset 0 0 0 3px var(--cor-0), inset 0 0 0 6px var(--cor-7);
+}
+
+.orcamento-seguro span {
+  display: none;
+}
+.orcamento-seguro label p {
+  padding-left: 15px;
+}
+.orcamento-seguro label {
+  justify-content: space-between;
+  position: relative;
+}
+
+#orcamento-seguro input:checked ~ label span {
+  display: flex;
+}
+
+.bikcraft-nebula {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #111111;
+  padding: 18px;
+  border-radius: 5px;
+  align-items: center;
+  margin-bottom: 30px;
+  background: #ffffff;
+}
+
+.bikcraft-nebula > p {
+  grid-column: 1;
+  font-family: "Poppins";
+  color: #111111;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  gap: 0px;
+  align-items: center;
+}
+
+.bikcraft-nebula p::before {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--cor-6);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.bikcraft-nebula p::before {
+  border-color: var(--cor-7);
+  box-shadow: inset 0 0 0 3px var(--cor-0), inset 0 0 0 6px var(--cor-7);
+}
+
+.bikcraft-nebula li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #595959;
+  font-size: 0.75rem;
+  font-family: "Poppins";
+}
+
+.bikcraft-nebula li img {
+  width: 16px;
+  height: 16px;
+}
+
+.bikcraft-nebula > span {
+  grid-column: 2;
+  justify-self: end;
+}
+
+@media (max-width: 1200px) {
+  .orcamentos-produtos {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form-orcamento {
+    padding: 60px 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .orcamentos-produtos {
+    color: #cccccc;
+    padding: 60px;
+    max-width: 100%;
+    background-color: #000000;
+  }
+}
+
+@media (max-width: 600px) {
+  .orcamentos-produtos {
+    padding: 40px;
+    background: #000000;
+  }
+
+  .bikcraft-nebula {
+    padding: 12px;
+  }
+
+  .bikcraft-nebula > p {
+    font-size: 0.9rem;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .bikcraft-nebula > span {
+    font-size: 0.8rem;
+  }
+
+  .bikcraft-nebula > p img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .bikcraft-nebula li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #595959;
+    font-size: 0.72rem;
+    font-family: "Poppins";
+  }
+
+  .bikcraft-nebula li img {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .escolha-produtos {
+    gap: 0px;
+    grid-template-columns: 1fr;
+  }
+
+  .orcamentos-produtos {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 335px) {
+  .bikcraft-nebula {
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 30px;
+    background: #ffffff;
+  }
+
+  .bikcraft-nebula > p {
+    font-size: 0.7rem;
+    grid-column: 1/-1;
+    gap: 4px;
+  }
+
+  .bikcraft-nebula > img {
+    max-width: 100px;
+    object-fit: cover;
+    width: 100%;
+    grid-row: 2;
+  }
+
+  .bikcraft-nebula > span {
+    display: none;
+  }
+
+  .bikcraft-nebula > p img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .bikcraft-nebula li {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    grid-column: span 2;
+    color: #595959;
+    font-size: 0.6rem;
+  }
+
+  .bikcraft-nebula li img {
+    width: 12px;
+    height: 12px;
+  }
+}

@@ -1,0 +1,57 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+  padding: 0px;
+}
+blockquote {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+dl,
+dt,
+dd {
+  margin: 0px;
+  padding: 0px;
+}
+
+a,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+a {
+  display: inline-block;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img[src$=".jpg"] {
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+}

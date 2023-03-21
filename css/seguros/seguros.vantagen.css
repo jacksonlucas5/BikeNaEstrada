@@ -1,0 +1,80 @@
+.seguros-vantagens-bg {
+  background: #000000;
+  color: #ffffff;
+}
+
+.seguros-nossas-vantagens {
+  padding: 100px 40px;
+}
+
+.seguros-nossas-vantagens h2 {
+  margin-bottom: 92px;
+}
+
+.seguros-vantagens-itens {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.seguros-vantagens-itens li {
+  color: var(--cor-6);
+}
+
+.seguros-vantagens-lista {
+  gap: 8px;
+  display: grid;
+}
+
+@media (max-width: 1000px) {
+  .seguros-vantagens-itens {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .seguros-vantagens-itens h3 {
+    font-size: 1.35rem;
+  }
+
+  .seguros-nossas-vantagens h2 {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 650px) {
+  .seguros-vantagens-itens {
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+
+  .seguros-nossas-vantagens {
+    padding: 20px 30px;
+  }
+
+  .seguros-nossas-vantagens h2 {
+    margin-bottom: 30px;
+  }
+
+  .seguros-vantagens-itens h3 {
+    font-size: 1.26rem;
+  }
+
+  .seguros-vantagens-itens li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .seguros-nossas-vantagens h2 {
+    font-size: 1.15rem;
+  }
+
+  .seguros-vantagens-itens h3 {
+    font-size: 1.1rem;
+  }
+
+  .seguros-vantagens-itens li {
+    font-size: 0.9rem;
+  }
+}

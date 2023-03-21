@@ -1,0 +1,64 @@
+.contato-form {
+  padding: 60px;
+  background: #dedede url("/img/dec/bottom-right.svg") no-repeat bottom 20px right 30px;
+  border-radius: 0px 5px 0px 0px;
+}
+
+.form-cadastro-bg h2:nth-child(3) {
+  margin-top: 45px;
+}
+
+.contato-form-itens {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contato-form-itens label {
+  display: block;
+  color: #111111;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.contato-form-itens button {
+  white-space: nowrap;
+  width: max-content;
+  cursor: pointer;
+}
+
+.contato-form-itens input[type="text"],
+.contato-form-itens input[type="email"],
+.contato-form-itens textarea {
+  color: #717171;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 8px 10px;
+  line-height: 1.5;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  background: #f7f7f7;
+  font-family: "Roboto";
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .contato-form {
+    padding: 30px;
+  }
+
+  .contato-form-itens {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:450px) {
+  .contato-form {
+
+    background:#dedede none;
+   
+  }
+}
