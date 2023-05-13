@@ -1,4 +1,4 @@
-export function iniGaleria() {
+export default function iniGaleria() {
   const imagens = document.querySelectorAll(".imagens-bicicletas-interna img");
   const galeriaContainer = document.querySelector(
     ".imagens-bicicletas-interna"

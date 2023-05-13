@@ -1,4 +1,4 @@
-export function initToolTip() {
+export default function initToolTip() {
   const toolTip = document.querySelectorAll('[data-tooltip="mapa"]');
 
 

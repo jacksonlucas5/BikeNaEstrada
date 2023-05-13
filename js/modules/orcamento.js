@@ -1,4 +1,4 @@
-export function initOrcamento() {
+export default function initOrcamento() {
   // Ativar Itens do Orçamento
   const parametros = new URLSearchParams(location.search);
 

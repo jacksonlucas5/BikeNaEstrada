@@ -1,15 +1,22 @@
-export function accordionList() {
-  const accordionList = document.querySelectorAll(".perguntas-frequentes dt");
+export default class AccordionList {
+  constructor(accordionList) {
+    this.accordionList = document.querySelectorAll(accordionList);
+    this.onClick = this.onClick.bind(this);
+  }
 
-  function onClick(event) {
+  onClick(event) {
     event.target.classList.toggle("ativo");
     const dd = event.target.nextElementSibling;
     dd.classList.toggle("ativo");
   }
 
-  accordionList.forEach((item) => {
-    item.addEventListener("click", onClick);
-  });
+  eventAccordion() {
+    this.accordionList.forEach((item) => {
+      item.addEventListener("click", this.onClick);
+    });
+  }
 
-
+  init() {
+    this.eventAccordion();
+  }
 }
