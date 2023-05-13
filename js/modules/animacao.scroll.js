@@ -4,7 +4,7 @@ export default class Scroll {
     this.observer = new IntersectionObserver(
       this.handleIntersection.bind(this),
       {
-        threshold: 1.0,
+        threshold: 0.5,
       }
     );
   }

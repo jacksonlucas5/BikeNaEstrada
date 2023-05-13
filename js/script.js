@@ -14,5 +14,5 @@ import Scroll from "./modules/animacao.scroll.js";
 const initAccordionList = new AccordionList(".perguntas-frequentes dt");
 initAccordionList.init();
 
-const initAnimaScroll = new Scroll(".item");
+const initAnimaScroll = new Scroll(".anime");
 initAnimaScroll.init();
