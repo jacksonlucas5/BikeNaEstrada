@@ -9,8 +9,10 @@ import AccordionList from "./modules/accordionList.js";
 import iniGaleria from "./modules/galeria.js";
 iniGaleria();
 
-import initScroll from "./modules/animacao.scroll.js";
-initScroll();
+import Scroll from "./modules/animacao.scroll.js";
 
 const initAccordionList = new AccordionList(".perguntas-frequentes dt");
 initAccordionList.init();
+
+const initAnimaScroll = new Scroll(".item");
+initAnimaScroll.init();
