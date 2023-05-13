@@ -1,14 +1,16 @@
-import { initOrcamento } from "./modules/orcamento.js";
+import initOrcamento from "./modules/orcamento.js";
 initOrcamento();
 
-import { initToolTip } from "./modules/toolTip.js";
+import initToolTip from "./modules/toolTip.js";
 initToolTip();
 
-import { accordionList } from "./modules/accordionList.js";
-accordionList();
+import AccordionList from "./modules/accordionList.js";
 
-import { iniGaleria } from "./modules/galeria.js";
+import iniGaleria from "./modules/galeria.js";
 iniGaleria();
 
-import { initScroll } from "./modules/animacao.scroll.js";
+import initScroll from "./modules/animacao.scroll.js";
 initScroll();
+
+const initAccordionList = new AccordionList(".perguntas-frequentes dt");
+initAccordionList.init();

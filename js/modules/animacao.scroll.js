@@ -1,4 +1,4 @@
-export function initScroll() {
+export default function initScroll() {
   // Use const em vez de let para variáveis que não são reatribuídas
 
   const items = document.querySelectorAll(".item");
