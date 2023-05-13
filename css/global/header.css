@@ -11,6 +11,10 @@
   padding-bottom: 20px;
 }
 
+.header h1 {
+  color: white;
+}
+
 .header-menu {
   display: flex;
   gap: 40px;
@@ -63,11 +67,5 @@
   .header-menu a {
     font-size: 0.8rem;
     padding: 8px 10px;
-  }
-}
-
-@media (max-width: 300px) {
-  .header-menu a {
-    padding: 6px 8px;
   }
 }

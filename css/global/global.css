@@ -41,9 +41,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-img[src$=".jpg"] {
   border-radius: 5px;
 }
 
@@ -54,4 +51,23 @@ a {
 button {
   border: none;
   background: none;
+}
+
+.item {
+  opacity: 0;
+}
+
+.item.ativo {
+  animation: animation 0.3s forwards;
+}
+
+@keyframes animation {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }

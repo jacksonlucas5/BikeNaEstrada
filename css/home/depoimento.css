@@ -6,7 +6,7 @@
   background-color: var(--cor-p1);
   justify-items: center;
   overflow: hidden;
- 
+
   grid-template-columns: 1fr 1fr;
 }
 
@@ -58,9 +58,8 @@
   color: var(--cor-p4);
 }
 
-@media (max-width: 1073px) {
+@media (max-width: 1080px) {
   .depoimento {
-    display: grid;
     grid-template-columns: 1fr;
   }
   .depoimento img {
@@ -80,17 +79,6 @@
   }
 }
 
-@media (max-width: 800px) {
-  .depoimento-itens p {
-    font-size: 1.6rem;
-  }
-
-  .depoimento-itens > span {
-    justify-self: center;
-    font-size: 1.2rem;
-  }
-}
-
 @media (max-width: 600px) {
   .depoimento-itens {
     padding: 25px 10px;
@@ -105,23 +93,9 @@
   }
 }
 
-@media (max-width: 530px) {
-  .depoimento-itens {
-    background: none;
-    padding: 25px 10px;
-  }
-
-  .depoimento-itens p {
-    font-size: 1.25rem;
-  }
-
-  .depoimento-itens > span {
-    font-size: 1rem;
-  }
-}
-
 @media (max-width: 480px) {
   .depoimento-itens {
+    background: none;
     padding: 25px 10px;
   }
 
@@ -131,19 +105,5 @@
 
   .depoimento-itens > span {
     font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 380px) {
-  .depoimento-itens {
-    padding: 25px 10px;
-  }
-
-  .depoimento-itens p {
-    font-size: 0.85rem;
-  }
-
-  .depoimento-itens > span {
-    font-size: 0.7rem;
   }
 }

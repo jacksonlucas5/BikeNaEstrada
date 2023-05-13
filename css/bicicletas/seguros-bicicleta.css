@@ -92,18 +92,11 @@
 
 @media (max-width: 500px) {
   .seguros-bicicletas-informacoes > h2 {
-    font-size: 1.7rem;
-  }
-  .seguros-bicicletas-informacoes > p {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 355px) {
-  .seguros-bicicletas-informacoes > h2 {
     font-size: 1.5rem;
   }
   .seguros-bicicletas-informacoes > p {
     font-size: 1rem;
   }
 }
+
+

@@ -7,7 +7,8 @@
 
 .contatos-informacao {
   padding: 60px 30px;
-  background:#000000 url("/img/dec/top-right.svg") no-repeat bottom 20px left 30px;
+  background: #000000 url("/img/dec/top-right.svg") no-repeat bottom 20px left
+    30px;
 }
 
 .contatos-informacao h2 {
@@ -51,6 +52,21 @@
 
 .lojas > img {
   margin-bottom: 32px;
+}
+
+.tool-Tip {
+  font-size: 0.8rem;
+  color: yellow;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 4px;
+  color: white;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 3px white, 0 0 0 2px #111111;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .lojas h2 {
@@ -113,7 +129,8 @@
     gap: 80px;
   }
   .contatos-informacao {
-    background:#000000 url("/img/dec/top-right.svg") no-repeat bottom 20px right 40px;
+    background: #000000 url("/img/dec/top-right.svg") no-repeat bottom 20px
+      right 40px;
   }
   .article-contatos > h2 {
     padding-left: 30px;
@@ -131,25 +148,6 @@
   .lojas-bg {
     display: grid;
     grid-template-columns: 1fr;
-    margin-bottom: 100px;
-    gap: 80px;
-  }
-
-  .lojas h2 {
-    font-size: 1.6rem;
-  }
-
-  .lojas-conteudo {
-    padding: 0px 10px;
-    gap: 20px 0px;
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 450px) {
-  .lojas-bg {
-    display: grid;
-    grid-template-columns: 1fr;
     margin-bottom: 50px;
     gap: 80px;
   }
@@ -157,13 +155,14 @@
   .lojas h2 {
     font-size: 1.2rem;
   }
-  .contatos-informacao {
-    background: #000000 none;
-  }
+
   .lojas-conteudo {
     padding: 0px 10px;
     gap: 20px 0px;
     font-size: 0.8rem;
     grid-template-columns: 1fr;
+  }
+  .contatos-informacao {
+    background: #000000 none;
   }
 }

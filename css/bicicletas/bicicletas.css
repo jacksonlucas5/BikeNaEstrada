@@ -214,13 +214,4 @@
   }
 }
 
-@media (max-width: 280px) {
-  .nossas-bicicletas-itens p {
-    font-size: 0.9rem;
-    margin-bottom: 20px;
-  }
 
-  .nossas-bicicletas-itens li {
-    font-size: 0.85rem;
-  }
-}

@@ -17,12 +17,4 @@
   }
 }
 
-@media (max-width: 500px) {
-  .termos h2 {
-    font-size: 1rem;
-  }
 
-  .termos p {
-    font-size: 0.88rem;
-  }
-}

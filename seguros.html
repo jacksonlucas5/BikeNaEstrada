@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seguros | Bikcraft</title>
-  <meta name="description" content="Seu seguros - Bikcraft.">
+  <title>Seguros | Bike na Estrada</title>
+  <meta name="description" content="Seu seguros - Bike na Estrada.">
   <link rel="shortcut icon" href="./img/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="./css/style.min.css" as="style">
-  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
 <body id="bicicletas">
   <header class="header-bg">
     <div class="header container">
-      <a href="./"><img src="img/bikcraft.svg" alt="Bikcraft" width="136" height="32"></a>
+      <a href="./"><h1>Bike na Estrada</h1></a>
       <nav aria-label="Primaria">
         <ul class="header-menu font-1-m">
           <li><a href="./bicicletas.html">Bicicletas</a></li>
@@ -40,11 +40,11 @@
     <div class="seguros-bg   seguro-bg-variavel">
 
       <div class="seguros">
-        <div class="plano-itens fadeInLeft" data-anime="200">
+        <div class="plano-itens">
           <h2 class="font-1-xl cor-0">PRATA</h2>
           <span class="font-1-xl ">R$ 199<span class="font-1-xs mensalidade">
               mensal</span></span>
-          <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=plano-prata">INSCREVA-SE</a>
+          <a id="inscricao-prata" class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">INSCREVA-SE</a>
           <ul class="font-2-m">
             <li>Duas trocas por ano</li>
             <li>Assistência técnica</li>
@@ -53,17 +53,17 @@
           </ul>
         </div>
 
-        <div class="plano-itens fadeInRight" data-anime="400">
+        <div class="plano-itens " >
           <h2 class="cor-p1 font-1-xl">OURO</h2>
           <span class=" font-1-xl ">R$ 299<span class="font-1-xs mensalidade">mensal</span></span>
-          <a class="botao" href="./orcamento.html?tipo=seguro&produto=plano-ouro">INSCREVA-SE</a>
+          <a id="inscricao-ouro" class="botao" href="./orcamento.html?tipo=seguro&produto=ouro">INSCREVA-SE</a>
           <ul class="font-2-m">
             <li>Cinco trocas por ano</li>
             <li>Assistência especial</li>
             <li>Suporte 24h</li>
             <li>Cobertura nacional</li>
             <li>Desconto em parceiros</li>
-            <li>Acesso ao Clube Bikcraft</li>
+            <li>Acesso ao Clube Bike na Estrada</li>
           </ul>
         </div>
       </div>
@@ -113,7 +113,7 @@
             <li>
               <h3 class="font-1-xz">Recuperação</h3>
             </li>
-            <li>A sua Bikcraft ficará pronta para uso no mesmo dia, caso você traga ela para ser reparada em uma das filiais.</li>
+            <li>A sua Bike na Estrada ficará pronta para uso no mesmo dia, caso você traga ela para ser reparada em uma das filiais.</li>
           </ul>
 
           <ul class="seguros-vantagens-lista font-2-s-u">
@@ -123,7 +123,7 @@
             <li>
               <h3 class="font-1-xz">Segurança</h3>
             </li>
-            <li>A sua Bikcraft ficará pronta para uso no mesmo dia, caso você traga ela para ser reparada em uma das filiais.</li>
+            <li>A sua Bike na Estrada ficará pronta para uso no mesmo dia, caso você traga ela para ser reparada em uma das filiais.</li>
           </ul>
 
           <ul class="seguros-vantagens-lista font-2-s-u">
@@ -132,7 +132,7 @@
             <li>
               <h3 class="font-1-xz">Rapidez</h3>
             </li>
-            <li>A sua Bikcraft ficará pronta para uso no mesmo dia, caso você traga ela para ser reparada em uma das filiais.</li>
+            <li>A sua Bike na Estrada ficará pronta para uso no mesmo dia, caso você traga ela para ser reparada em uma das filiais.</li>
           </ul>
         </div>
       </div>
@@ -145,38 +145,38 @@
 
       <dl>
         <div class="perguntas-frequentes">
-          <dt><button class="font-1-m-b cor-11" aria-expanded="true" aria-controls="pergunta1"> Qual forma de pagamento vocês aceitam?</button></dt>
-          <dd class="font-2-s-u cor-9 ativo" id="pergunta1">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+          <dt class="font-1-m-b cor-11 ativo"> Qual forma de pagamento vocês aceitam?</dt>
+          <dd class="font-2-s-u cor-9 ativo">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
         </div>
 
         <div class="perguntas-frequentes">
-          <dt><button class="font-1-m-b cor-11" aria-expanded="false" aria-controls="pergunta2">Como posso entrar em contato?</button></dt>
-          <dd class="font-2-s-u cor-9" id="pergunta2">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+          <dt class="font-1-m-b cor-11">Como posso entrar em contato?</dt>
+          <dd class="font-2-s-u cor-9">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
         </div>
 
         <div class="perguntas-frequentes">
-          <dt><button class="font-1-m-b cor-11" aria-expanded="false" aria-controls="pergunta3">Vocês possuem algum desconto?</button></dt>
-          <dd class="font-2-s-u cor-9" id="pergunta3">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+          <dt class="font-1-m-b cor-11" ">Vocês possuem algum desconto?</dt>
+          <dd class="font-2-s-u cor-9">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
         </div>
 
         <div class="perguntas-frequentes">
-          <dt><button class="font-1-m-b cor-11" aria-expanded="false" aria-controls="pergunta4">Qual a garantia que possuo?</button></dt>
-          <dd class="font-2-s-u cor-9" id="pergunta4">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+          <dt class="font-1-m-b cor-11">Qual a garantia que possuo?</dt>
+          <dd class="font-2-s-u cor-9">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
         </div>
 
         <div class="perguntas-frequentes">
-          <dt><button class="font-1-m-b cor-11" aria-expanded="false" aria-controls="pergunta5">Posso parcelar no boleto?</button></dt>
-          <dd class="font-2-s-u cor-9" id="pergunta5">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+          <dt class="font-1-m-b cor-11" >Posso parcelar no boleto?</dt>
+          <dd class="font-2-s-u cor-9">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
         </div>
 
         <div class="perguntas-frequentes">
-          <dt><button class="font-1-m-b cor-11" aria-expanded="false" aria-controls="pergunta6">Quantas trocas posso fazer ao ano?</button></dt>
-          <dd class="font-2-s-u cor-9" id="pergunta6">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+          <dt class="font-1-m-b cor-11">Quantas trocas posso fazer ao ano?</dt>
+          <dd class="font-2-s-u cor-9">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
         </div>
 
         <div class="perguntas-frequentes">
-          <dt><button class="font-1-m-b cor-11" aria-expanded="false" aria-controls="pergunta7">Qual Bikcraft devo escolher para o meu tamanho?</button></dt>
-          <dd class="font-2-s-u cor-9" id="pergunta7">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+          <dt class="font-1-m-b cor-11">Qual Bike na Estrada devo escolher para o meu tamanho?</dt>
+          <dd class="font-2-s-u cor-9" >Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
         </div>
       </dl>
     </div>
@@ -184,7 +184,7 @@
 
   <footer>
     <div class="footer" aria-label="Contatos">
-      <img src="img/bikcraft.svg" alt="Bikcraft" width="136" height="32">
+      <h1>Bike na Estrada</h1>
 
       <div>
         <h3 class="font-2-l titulo-telefone">Contato</h3>
@@ -194,7 +194,7 @@
             <a href="tel:+552199999999">+55 21 9999-9999</a>
           </li>
           <li>
-            <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
+            <a href="mailto:contato@Bike na Estrada.com">contato@Bike na Estrada.com</a>
           </li>
           <li>
             <a href="./">Rua Ali Perto, 42 - Botafogo</a>
@@ -222,12 +222,12 @@
         <a href="./termos.html">Termos e Condições</a>
       </nav>
 
-      <p class="font-2-m">Bikcraft © Alguns direitos reservados.</p>
+      <p class="font-2-m">Bike na Estrada © Alguns direitos reservados.</p>
     </div>
 
   </footer>
-  <script src="./js/plugin/simple-anime.js"></script>
-  <script src="./js/script.js"></script>
+  
+  <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

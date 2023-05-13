@@ -29,7 +29,7 @@
 .imagens-bicicletas-interna img {
   flex: 1;
   object-fit: contain;
-  min-width: 250px;
+  min-width: 5px;
 }
 
 .conteudos-informacao-inicial p {

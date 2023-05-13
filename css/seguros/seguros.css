@@ -3,7 +3,7 @@
   padding: 1px;
 }
 
-.seguros-bg h1{
+.seguros-bg h1 {
   color: var(--cor-6);
   margin-left: 10px;
 }
@@ -32,7 +32,7 @@
   margin-right: 50px;
   height: 100%;
   padding-top: 20px;
-  
+
   align-self: flex-start;
 }
 .plano-itens h2:nth-child(2) {
@@ -140,19 +140,12 @@
 
 @media (max-width: 400px) {
   .seguros {
-    padding: 20px;
-    gap: 40px;
+    padding: 10px;
+    margin-bottom: 30px;
+    gap: 20px;
   }
 
   .plano-itens {
     min-width: auto;
-  }
-
-  .plano-itens ul li {
-    font-size: 0.8rem;
-  }
-
-  .plano-itens span {
-    font-size: 1rem;
   }
 }
