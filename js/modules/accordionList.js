@@ -1,13 +1,14 @@
 export default class AccordionList {
-  constructor(accordionList) {
+  constructor(accordionList, classe) {
     this.accordionList = document.querySelectorAll(accordionList);
     this.onClick = this.onClick.bind(this);
+    this.classe = classe;
   }
 
   onClick(event) {
-    event.target.classList.toggle("ativo");
+    event.target.classList.toggle(this.classe);
     const dd = event.target.nextElementSibling;
-    dd.classList.toggle("ativo");
+    dd.classList.toggle(this.classe);
   }
 
   eventAccordion() {
@@ -17,6 +18,8 @@ export default class AccordionList {
   }
 
   init() {
-    this.eventAccordion();
+    if (this.accordionList.length) {
+      this.eventAccordion();
+    }
   }
 }

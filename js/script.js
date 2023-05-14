@@ -1,18 +1,20 @@
 import initOrcamento from "./modules/orcamento.js";
-initOrcamento();
-
-import initToolTip from "./modules/toolTip.js";
-initToolTip();
-
+import Tooltip from "./modules/toolTip.js";
 import AccordionList from "./modules/accordionList.js";
-
 import iniGaleria from "./modules/galeria.js";
-iniGaleria();
-
 import Scroll from "./modules/animacao.scroll.js";
 
-const initAccordionList = new AccordionList(".perguntas-frequentes dt");
+const initAccordionList = new AccordionList(
+  ".perguntas-frequentes dt",
+  "ativo"
+);
 initAccordionList.init();
 
 const initAnimaScroll = new Scroll(".anime");
 initAnimaScroll.init();
+
+const initToolTip = new Tooltip('[data-tooltip="mapa"]');
+initToolTip.init();
+
+initOrcamento();
+iniGaleria();
