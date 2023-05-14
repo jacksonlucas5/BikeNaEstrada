@@ -27,6 +27,9 @@ export default class Scroll {
   }
 
   init() {
-    this.eventoObserve();
+    if (this.selector.length) {
+      this.eventoObserve();
+    }
+    return this;
   }
 }

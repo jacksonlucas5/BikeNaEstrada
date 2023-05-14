@@ -1,4 +1,4 @@
-import initOrcamento from "./modules/orcamento.js";
+import Orcamento from "./modules/orcamento.js";
 import Tooltip from "./modules/toolTip.js";
 import AccordionList from "./modules/accordionList.js";
 import Galeria from "./modules/galeria.js";
@@ -16,7 +16,9 @@ initAnimaScroll.init();
 const initToolTip = new Tooltip('[data-tooltip="mapa"]');
 initToolTip.init();
 
-initOrcamento();
+const initOrcamento = new Orcamento();
+initOrcamento.init();
+
 const initGaleria = new Galeria(
   ".imagens-bicicletas-interna img",
   ".imagens-bicicletas-interna"
