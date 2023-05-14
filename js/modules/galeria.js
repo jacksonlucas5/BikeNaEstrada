@@ -29,6 +29,9 @@ export default class Galeria {
     });
   }
   init() {
-    this.eventoImagens();
+    if (this.imagens.length && this.galeriaContainer) {
+      this.eventoImagens();
+    }
+    return this;
   }
 }
