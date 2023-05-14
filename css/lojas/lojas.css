@@ -7,7 +7,7 @@
 
 .contatos-informacao {
   padding: 60px 30px;
-  background: #000000 url("/img/dec/top-right.svg") no-repeat bottom 20px left
+  background: #000000 url("../../img/dec/top-right.svg") no-repeat bottom 20px left
     30px;
 }
 
@@ -129,7 +129,7 @@
     gap: 80px;
   }
   .contatos-informacao {
-    background: #000000 url("/img/dec/top-right.svg") no-repeat bottom 20px
+    background: #000000 url("../../img/dec/top-right.svg") no-repeat bottom 20px
       right 40px;
   }
   .article-contatos > h2 {

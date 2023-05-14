@@ -55,7 +55,7 @@
 
 .titulo {
   padding: 0px 30px;
-  background: url("/img/dec/top-right.svg") no-repeat top 20px right 30px;
+  background: url("../../img/dec/top-right.svg") no-repeat top 20px right 30px;
 }
 
 .titulo p {

@@ -20,7 +20,7 @@
 .depoimento-itens {
   display: grid;
   padding: 80px 40px;
-  background: url("/img/dec/bottom-right.svg") no-repeat bottom 20px right 20px;
+  background: url("../../img/dec/bottom-right.svg") no-repeat bottom 20px right 20px;
   align-self: flex-end;
 }
 

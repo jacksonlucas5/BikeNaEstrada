@@ -35,7 +35,7 @@
   right: 0px;
   position: absolute;
   transition: 0.3s;
-  background-image: url("/img/icones/seta-abrir.svg");
+  background-image: url("../../img/icones/seta-abrir.svg");
 }
 
 .perguntas-frequentes dt.ativo::after {
