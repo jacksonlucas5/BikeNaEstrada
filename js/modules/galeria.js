@@ -1,25 +1,34 @@
-export default function iniGaleria() {
-  const imagens = document.querySelectorAll(".imagens-bicicletas-interna img");
-  const galeriaContainer = document.querySelector(
-    ".imagens-bicicletas-interna"
-  );
+export default class Galeria {
+  constructor(imagens, galeriaContainer) {
+    this.imagens = document.querySelectorAll(imagens);
+    this.galeriaContainer = document.querySelector(galeriaContainer);
+    this.adicionarEventos = this.adicionarEventos.bind(this);
+    this.trocarImagem = this.trocarImagem.bind(this);
+  }
 
   // Define a função para trocar as imagens
-  function trocarImagem(evento) {
+  trocarImagem(evento) {
     const imagemClicada = evento.currentTarget;
     const mediaQuery = window.matchMedia("(min-width:330px)");
 
     // Move a imagem para o início da galeria apenas em telas grandes
     if (mediaQuery.matches) {
-      galeriaContainer.prepend(imagemClicada);
+      this.galeriaContainer.prepend(imagemClicada);
     }
   }
 
   // Define a função para adicionar os eventos às imagens
-  function adicionarEventos(imagem) {
-    imagem.addEventListener("click", trocarImagem);
+  adicionarEventos(imagem) {
+    imagem.addEventListener("click", this.trocarImagem);
   }
 
   // Adiciona os eventos a todas as imagens
-  imagens.forEach(adicionarEventos);
+  eventoImagens() {
+    this.imagens.forEach((items) => {
+      this.adicionarEventos(items);
+    });
+  }
+  init() {
+    this.eventoImagens();
+  }
 }
